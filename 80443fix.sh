@@ -131,8 +131,8 @@ Nodes:
       CertConfig:
         CertMode: http
         CertDomain: "$CertDomain80" 
-        CertFile: /etc/XrayR/cert-4gsinhvien/4gsinhvien.crt
-        KeyFile: /etc/XrayR/cert-4gsinhvien/4gsinhvien.key
+        CertFile: /etc/XrayR/cert-cloudfly/cloudfly.crt 
+        KeyFile: /etc/XrayR/cert-cloudfly/cloudfly.key
         Provider: alidns 
         Email: test@me.com
         DNSEnv: 
