@@ -131,8 +131,8 @@ Nodes:
       CertConfig:
         CertMode: http
         CertDomain: "$CertDomain80" 
-        CertFile: /etc/XrayR/cert-cloudfly/ht4g.crt 
-        KeyFile: /etc/XrayR/cert-cloudfly/ht4g.key
+        CertFile:  
+        KeyFile: 
         Provider: alidns 
         Email: test@me.com
         DNSEnv: 
