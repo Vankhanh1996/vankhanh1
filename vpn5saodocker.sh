@@ -105,11 +105,6 @@ error_detect_depends() {
 
 # Pre-installation settings
 pre_install_docker_compose() {
-    read -p "Nhập Link Web cả https:// :" domain
-    echo -e "Link Web là : ${domain}"
-
-    read -p "Nhập Api Key( khoá giao tiếp của web :" APIKEY
-    echo -e "API KEY là : ${APIKEY}"
 
     read -p "Nhập Node ID port 80 :" node_80
     echo -e "Node_80 là : ${node_80}"
@@ -167,8 +162,8 @@ Nodes:
   -
     PanelType: "V2board" # Panel type: SSpanel, V2board, PMpanel
     ApiConfig:
-      ApiHost: "$domain"
-      ApiKey: "$APIKEY"
+      ApiHost: "https://vpn5sao.com"
+      ApiKey: "admin@vpn5sao.com"
       NodeID: $node_80
       NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan
       Timeout: 30 # Timeout for the api request
