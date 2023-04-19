@@ -58,7 +58,7 @@ makeConfig() {
     echo "------  Config 80 & 443 BY CLOUDFLY.ME ---------"
 	read -p "Loại website của bạn: V2board"
 	echo "---------------"
-	read -p "Link website: https://4gnhanh.click"
+	read -p "Link website: https://sieuvipvpn.pw"
 	echo "---------------"
 	read -p "API key của web: huyvu_2005_admin"
 	echo "---------------"
@@ -103,7 +103,7 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://4gnhanh.click"
+      ApiHost: "https://sieuvipvpn.pw"
       ApiKey: "huyvu_2005_admin"
       NodeID: $NodeID80
       NodeType: V2ray 
@@ -141,7 +141,7 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://4gnhanh.click"
+      ApiHost: "https://sieuvipvpn.pw"
       ApiKey: "huyvu_2005_admin"
       NodeID: $NodeID443
       NodeType: V2ray 
@@ -169,8 +169,8 @@ Nodes:
       CertConfig:
         CertMode: file 
         CertDomain: "$CertDomain443"
-        CertFile: /etc/XrayR/cert-cloudfly/4gnhanh.crt 
-        KeyFile: /etc/XrayR/cert-cloudfly/4gnhanh.key
+        CertFile: /etc/XrayR/cert-cloudfly/sieuvipvpn.crt 
+        KeyFile: /etc/XrayR/cert-cloudfly/sieuvipvpn.key
         Provider: cloudflare 
         Email: test@me.com
         DNSEnv: 
