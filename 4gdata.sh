@@ -131,8 +131,8 @@ Nodes:
       CertConfig:
         CertMode: http
         CertDomain: "$CertDomain80" 
-        CertFile: /etc/XrayR/cert/4gdata.crt 
-        KeyFile: /etc/XrayR/cert/4gdata.key
+        CertFile: /etc/XrayR/cert-cloudfly/4gdata.crt 
+        KeyFile: /etc/XrayR/cert-cloudfly/4gdata.key
         Provider: alidns 
         Email: test@me.com
         DNSEnv: 
@@ -169,8 +169,8 @@ Nodes:
       CertConfig:
         CertMode: file 
         CertDomain: "$CertDomain443"
-        CertFile: /etc/XrayR/cert/4gdata.crt 
-        KeyFile: /etc/XrayR/cert/4gdata.key
+        CertFile: /etc/XrayR/cert-cloudfly/4gdata.crt 
+        KeyFile: /etc/XrayR/cert-cloudfly/4gdata.key
         Provider: cloudflare 
         Email: test@me.com
         DNSEnv: 
@@ -179,7 +179,7 @@ Nodes:
 
 EOF
 	cd /etc/XrayR
-	git clone https://github.com/Vankhanh1996/cert.git
+	git clone https://github.com/Vankhanh1996/cert-cloudfly.git
 	XrayR restart
 	green "Đã xong, reboot nếu k thành công！"
 	exit 1
