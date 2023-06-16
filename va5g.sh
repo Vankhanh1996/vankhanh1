@@ -60,7 +60,7 @@ makeConfig() {
 	echo "---------------"
 	read -p "Link website: https://va5g.com/"
 	echo "---------------"
-	read -p "API key của web: admin@va5gapikey"
+	read -p "API key của web: admin@va5gadminadmin"
 	echo "---------------"
 	read -p "Node ID 80: " NodeID80
 	echo -e "Node 80 là: ${NodeID80}"
@@ -104,7 +104,7 @@ Nodes:
     PanelType: "V2board" 
     ApiConfig:
       ApiHost: "https://va5g.com"
-      ApiKey: "admin@va5gapikey"
+      ApiKey: "admin@va5gadminadmin"
       NodeID: $NodeID80
       NodeType: V2ray 
       Timeout: 30 
@@ -131,8 +131,8 @@ Nodes:
       CertConfig:
         CertMode: http
         CertDomain: "$CertDomain80" 
-        CertFile: /etc/XrayR/cert-cloudfly/4gdata.crt 
-        KeyFile: /etc/XrayR/cert-cloudfly/4gdata.key
+        CertFile: /etc/XrayR/cert-cloudfly/va5g.crt 
+        KeyFile: /etc/XrayR/cert-cloudfly/va5g.key
         Provider: alidns 
         Email: test@me.com
         DNSEnv: 
@@ -142,7 +142,7 @@ Nodes:
     PanelType: "V2board" 
     ApiConfig:
       ApiHost: "https://va5g.com"
-      ApiKey: "admin@va5gapikey"
+      ApiKey: "admin@va5gadminadmin"
       NodeID: $NodeID443
       NodeType: V2ray 
       Timeout: 30 
