@@ -58,9 +58,9 @@ makeConfig() {
     echo "------  Config 80 & 443 BY TECHZPN.PRO ---------"
 	read -p "Loại website của bạn: V2board"
 	echo "---------------"
-	read -p "Link website: https://4gdata.xyz/"
+	read -p "Link website: https://va5g.com/"
 	echo "---------------"
-	read -p "API key của web: hdjwuejeieiejehjuu"
+	read -p "API key của web: admin@va5gapikey"
 	echo "---------------"
 	read -p "Node ID 80: " NodeID80
 	echo -e "Node 80 là: ${NodeID80}"
@@ -103,8 +103,8 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://4gdata.xyz"
-      ApiKey: "hdjwuejeieiejehjuu"
+      ApiHost: "https://va5g.com"
+      ApiKey: "admin@va5gapikey"
       NodeID: $NodeID80
       NodeType: V2ray 
       Timeout: 30 
@@ -141,8 +141,8 @@ Nodes:
   -
     PanelType: "V2board" 
     ApiConfig:
-      ApiHost: "https://4gdata.xyz"
-      ApiKey: "hdjwuejeieiejehjuu"
+      ApiHost: "https://va5g.com"
+      ApiKey: "admin@va5gapikey"
       NodeID: $NodeID443
       NodeType: V2ray 
       Timeout: 30 
@@ -169,8 +169,8 @@ Nodes:
       CertConfig:
         CertMode: file 
         CertDomain: "$CertDomain443"
-        CertFile: /etc/XrayR/cert-cloudfly/4gdata.crt 
-        KeyFile: /etc/XrayR/cert-cloudfly/4gdata.key
+        CertFile: /etc/XrayR/cert-cloudfly/va5g.crt 
+        KeyFile: /etc/XrayR/cert-cloudfly/va5g.key
         Provider: cloudflare 
         Email: test@me.com
         DNSEnv: 
